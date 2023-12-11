@@ -1,0 +1,9 @@
+@import './dark.scss';
+
+body {
+  color: $primary-700;
+  background-color: $mono-a400;
+}
+.container {
+  background-color: $mono-500;
+}

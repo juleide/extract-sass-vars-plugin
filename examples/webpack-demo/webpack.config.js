@@ -1,13 +1,18 @@
 const path = require('path');
-const ExtractSassVarsPlugin = require('../index');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ExtractSassVarsPlugin = require('extract-sass-vars-plugin');
+
+const themes = [
+  { name: 'light', path: path.resolve(__dirname, './themes/light.json') },
+  { name: 'dark', path: path.resolve(__dirname, './themes/dark.json') }
+]
 
 module.exports = {
   mode: 'production',
   entry: './index.js',
   output: {
     filename: 'index.js',
-    path: path.join(__dirname, './dist'),
-    clean: true
+    path: path.join(__dirname, './dist')
   },
   module: {
     rules: [
@@ -17,10 +22,7 @@ module.exports = {
           {
             loader: ExtractSassVarsPlugin.loader,
             options: {
-              prefix: 'hz',
-              files: [
-                path.resolve(__dirname, './style/dark.scss')
-              ]
+              themes
             }
           }
         ]
@@ -28,8 +30,9 @@ module.exports = {
     ]
   },
   plugins: [
+    new HtmlWebpackPlugin(),
     new ExtractSassVarsPlugin({
-      themeJsonDir: path.resolve(__dirname, './themes')
+      themes
     })
   ]
 };

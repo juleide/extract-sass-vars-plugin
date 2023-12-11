@@ -1,0 +1,72 @@
+//header背景色应该不具通用性
+$bg-header-color: #003899;
+
+// 图表默认配色
+$chart-primary-blue:#1F71FF;
+$chart-primary-violet:#9646FF;
+$chart-primary-error: #ff5266;
+$chart-primary-orange:#FF9431;
+$chart-primary-yellow:#F5CD00;
+$chart-primary-lime:#239545;
+$chart-primary-teal:#2CC8C8;
+$chart-primary-cerulean:#34B8FF;
+
+// 字体默认
+$type-900:rgba(21, 22, 24, 0.92);
+$type-800:rgba(21, 22, 24, 0.72);
+$type-700:rgba(21, 22, 24, 0.48);
+$type-600:rgba(21, 22, 24, 0.36);
+
+
+$primary-700:#478BFF; // #5292FF
+$primary-800:#3D85FF;
+$primary-900:#1F71FF;
+$primary-a100:rgba(43, 121, 255, 0.1);
+$primary-a200:rgba(43, 121, 255, 0.16);
+$primary-a300:rgba(43, 121, 255, 0.24);
+
+$white-100: #FFFFFF;
+
+$mono-100:#FFFFFF;
+$mono-200:#F7F8FA;
+$mono-300:#EEF0F4;
+$mono-400:#E2E4E9;
+$mono-500:#D7D9DE;
+$mono-600:#CCCED4;
+$mono-a100:rgba(15, 34, 67, 0.05);
+$mono-a200:rgba(15, 34, 67, 0.07);
+$mono-a300:rgba(15, 34, 67, 0.11);
+$mono-a400:rgba(15, 34, 67, 0.14);
+$mono-a500:rgba(15, 34, 67, 0.2);
+$mono-a900:rgba(15, 34, 67, 0.9);
+$mono-m100:rgba(226, 228, 233, 0.88);
+
+$public-100: #FFFFFF;
+$public-900: #13151A;
+
+//边框阴影
+$elevation-outline-01: 0px 1px 2px rgba(16, 48, 102, 0.06), 0px 0px 1.5px rgba(16, 48, 102, 0.32);
+$elevation-outline-02: 0px 2px 4px rgba(15, 34, 67, 0.08), 0px 0px 1px rgba(15, 34, 67, 0.5);
+$elevation-outline-03: 0px 3px 6px rgba(15, 34, 67, 0.12), 0px 0px 1px rgba(15, 34, 67, 0.5);
+$elevation-outline-04: 0px 4px 8px rgba(16, 48, 102, 0.16), 0px 0px 1px rgba(16, 48, 102, 0.5);
+
+$container-soft-01: 0px 8px 64px rgba(15, 34, 67, 0.12), 0px 1px 3px rgba(15, 34, 67, 0.06);
+$container-soft-02: 0px 8px 64px rgba(15, 34, 67, 0.06), 0px 8px 24px rgba(15, 34, 67, 0.12), 0px 1px 3px rgba(15, 34, 67, 0.1);
+$container-soft-03: 0px 16px 24px rgba(15, 34, 67, 0.2), 0px 0px 4px rgba(15, 34, 67, 0.08);
+$container-soft-04: 0px 24px 48px rgba(15, 34, 67, 0.3), 0px 0px 4px rgba(15, 34, 67, 0.08);
+
+$container-c100: 0px 1px 2px rgba(4, 8, 16, 0.03), 0px 2px 4px rgba(4, 8, 16, 0.03), 0px 8px 64px rgba(4, 8, 16, 0.1);
+$container-c200: 0px 0px 1px rgba(15, 34, 67, 0.3), 0px 1px 3px rgba(15, 34, 67, 0.08), 0px 4px 8px rgba(15, 34, 67, 0.03);
+$container-c300: 0px 0px 1px rgba(15, 34, 67, 0.2), 0px 1px 3px rgba(15, 34, 67, 0.12), 0px 4px 8px rgba(15, 34, 67, 0.06), 0px 8px 16px rgba(15, 34, 67, 0.06);
+$container-c400: 0px 0px 1px rgba(15, 34, 67, 0.2), 0px 1px 3px rgba(15, 34, 67, 0.12), 0px 4px 8px rgba(15, 34, 67, 0.06), 0px 8px 16px rgba(15, 34, 67, 0.06), 0px 16px 32px rgba(15, 34, 67, 0.06), 0px 32px 64px rgba(15, 34, 67, 0.06);
+$container-c500: 0px 0px 1px rgba(15, 34, 67, 0.2), 0px 1px 3px rgba(15, 34, 67, 0.12), 0px 4px 8px rgba(15, 34, 67, 0.08), 0px 8px 16px rgba(15, 34, 67, 0.08), 0px 16px 32px rgba(15, 34, 67, 0.08), 0px 32px 64px rgba(15, 34, 67, 0.08), 0px 64px 128px rgba(15, 34, 67, 0.08);
+// notification 背景颜色
+$bg-notification: $white-100;
+
+$mono-400-light-white:#FFFFFF;
+
+
+$orange-a100: rgba(255, 148, 49, 0.12);
+
+$red-a100: rgba(255, 82, 102, 0.09);
+$red-900: rgba(255, 82, 102, 1);
