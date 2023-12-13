@@ -1,6 +1,6 @@
 # extract-sass-vars-plugin
 
-这个插件适用于已有项目样式使用sass变量，希望增加多主题功能，该插件可将已有sass变量转换成css变量挂载到html节点下，通过配置多个json主题文件，可以实现多主题功能。
+这个插件适用于已有项目样式使用sass变量，后续希望扩展多主题功能，该插件可将已有sass变量转换成css变量挂载到html节点下，通过配置多个json主题文件，可以实现多主题功能。
 
 ## 安装
 
@@ -44,24 +44,27 @@ module.exports = {
     })
     new ExtractSassVarsPlugin({
       themes,
-      defaultTheme: 'light' // 默认主题, 如果没有设置默认主题，则themes[0].name作为默认主题
+      defaultTheme: 'light' // 默认主题, 如果没有设置默认主题，则取themes[0].name作为默认主题
     })
   ]
 }
 ```
 
-启动项目后, 插件将把所有的json主题文件中的sass变量转换成css变量，并挂载到html节点下，并在html节点上增加主题属性，如：
+启动项目后, 插件将把所有的json主题文件中的sass变量转换成css变量并生成themes.css文件，挂载到html节点下，同时在html节点上增加主题属性data-theme="light"：
 
 ```html
 <html data-theme="light">
   <head>
     <!--... -->
+    <link href="/themes.css" rel="stylesheet" id="theme-link-tag">
   </head>
   <body>
     <!--... -->
   </body>
 </html>
 ```
+
+themes.css文件内容如下，该文件将自动注入到index.html中
 
 ```css
 html[data-theme="light"] {
@@ -74,6 +77,9 @@ html[data-theme="dark"] {
 }```
 
 通过切换data-theme属性，可以实现多主题功能。
+```js
+document.documentElement.setAttribute('data-theme', 'dark');
+```
 
 ## demo
 查看项目examples目录下demo，可以看到如何使用该插件。
