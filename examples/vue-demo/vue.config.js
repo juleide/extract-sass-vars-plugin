@@ -29,7 +29,9 @@ module.exports = {
     },
     plugins: [
       new ExtractSassVarsPlugin({
-        themes
+        themes,
+        outputDir: '/assets/css',
+        filename: 'themes'
       })
     ]
   }

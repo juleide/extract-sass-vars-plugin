@@ -44,7 +44,9 @@ module.exports = {
     })
     new ExtractSassVarsPlugin({
       themes,
-      defaultTheme: 'light' // 默认主题, 如果没有设置默认主题，则取themes[0].name作为默认主题
+      defaultTheme: 'light', // 默认主题, 可选，如果没有设置默认主题，则取themes[0].name作为默认主题
+      outputDir: 'assets/css', // css文件输出路径 可选
+      filename: 'themes' // 生成的css文件名 可选，默认themes
     })
   ]
 }
@@ -70,10 +72,12 @@ themes.css文件内容如下，该文件将自动注入到index.html中
 html[data-theme="light"] {
   --color-primary: #333;
   --color-secondary: #666;
+  ...
 }
 html[data-theme="dark"] {
   --color-primary: #fff;
   --color-secondary: #ccc;
+  ...
 }```
 
 通过切换data-theme属性，可以实现多主题功能。
