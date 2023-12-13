@@ -78,10 +78,11 @@ html[data-theme="dark"] {
   --color-primary: #fff;
   --color-secondary: #ccc;
   ...
-}```
+}
+```
 
 通过切换data-theme属性，可以实现多主题功能。
-```js
+```javascript
 document.documentElement.setAttribute('data-theme', 'dark');
 ```
 
