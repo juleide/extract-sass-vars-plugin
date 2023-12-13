@@ -1,6 +1,6 @@
 # extract-sass-vars-plugin
 
-这个插件适用于已有项目使用sass，希望增加多主题功能，该插件可将已有sass变量转换成css变量挂载到html节点下，通过配置多个json主题文件，可以实现多主题功能。
+这个插件适用于已有项目样式使用sass变量，希望增加多主题功能，该插件可将已有sass变量转换成css变量挂载到html节点下，通过配置多个json主题文件，可以实现多主题功能。
 
 ## 安装
 
@@ -64,9 +64,10 @@ module.exports = {
 ```
 通过切换data-theme属性，可以实现多主题功能。
 
-## 注意事项
+## demo
+查看项目examples目录下demo，可以看到如何使用该插件。
 
-- 该插件只支持sass变量，不支持sass函数。
-- 该插件只支持sass变量，不支持sass混合器。
-- 该插件只支持sass变量，不支持sass导入。
-- 该插件只支持sass变量，不支持sass运算。
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/juleide/extract-sass-vars-plugin.svg)](https://starchart.cc/juleide/extract-sass-vars-plugin)

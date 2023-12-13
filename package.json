@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
-  "author": "",
+  "author": "juleide",
   "license": "ISC",
   "devDependencies": {
     "html-webpack-plugin": "^5.5.4",
