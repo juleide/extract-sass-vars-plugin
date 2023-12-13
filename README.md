@@ -62,6 +62,17 @@ module.exports = {
   </body>
 </html>
 ```
+
+```css
+html[data-theme="light"] {
+  --color-primary: #333;
+  --color-secondary: #666;
+}
+html[data-theme="dark"] {
+  --color-primary: #fff;
+  --color-secondary: #ccc;
+}```
+
 通过切换data-theme属性，可以实现多主题功能。
 
 ## demo
